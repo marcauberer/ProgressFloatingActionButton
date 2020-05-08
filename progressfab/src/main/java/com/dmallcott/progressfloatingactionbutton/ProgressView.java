@@ -24,13 +24,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.Build;
-import android.os.Handler;
-import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
 
 import static com.dmallcott.progressfloatingactionbutton.utils.ThemeUtils.getThemePrimaryColor;
 

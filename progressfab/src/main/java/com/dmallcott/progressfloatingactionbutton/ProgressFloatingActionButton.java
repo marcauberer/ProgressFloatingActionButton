@@ -16,21 +16,16 @@
 
 package com.dmallcott.progressfloatingactionbutton;
 
-import android.animation.Animator;
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
 import android.util.AttributeSet;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.FrameLayout;
 
 import com.dmallcott.progressfloatingactionbutton.utils.ColorUtils;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import static com.dmallcott.progressfloatingactionbutton.utils.ThemeUtils.getThemeAccentColor;
 import static com.dmallcott.progressfloatingactionbutton.utils.ThemeUtils.getThemePrimaryColor;

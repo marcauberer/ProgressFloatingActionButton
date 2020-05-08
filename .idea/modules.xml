@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ProgressFloatingActionButton.iml" filepath="$PROJECT_DIR$/ProgressFloatingActionButton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/progressfab/progressfab.iml" filepath="$PROJECT_DIR$/progressfab/progressfab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgressFloatingActionButton.iml" filepath="$PROJECT_DIR$/ProgressFloatingActionButton.iml" group="ProgressFloatingActionButton" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ProgressFloatingActionButton/app" />
+      <module fileurl="file://$PROJECT_DIR$/progressfab/progressfab.iml" filepath="$PROJECT_DIR$/progressfab/progressfab.iml" group="ProgressFloatingActionButton/progressfab" />
     </modules>
   </component>
 </project>

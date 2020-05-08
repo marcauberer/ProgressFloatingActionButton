@@ -5,12 +5,12 @@ apply plugin: 'com.jfrog.bintray'
 version = "1.0.0"
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 23
+        minSdkVersion 14
+        targetSdkVersion 29
         versionCode 1
         versionName version
     }
@@ -27,14 +27,12 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    // implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    final SUPPORT_LIBRARY_VERSION = '23.1.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
 
-    compile "com.android.support:appcompat-v7:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
-
-    testCompile 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
 }
 
 def siteUrl = 'https://github.com/dmallcott/ProgressFloatingActionButton'
