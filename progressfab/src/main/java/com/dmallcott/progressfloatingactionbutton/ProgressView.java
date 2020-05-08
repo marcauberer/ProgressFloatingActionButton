@@ -101,8 +101,7 @@ public class ProgressView extends View {
 
     public void setCurrentProgress(int currentProgress, boolean animate) {
         // If the view is animating no further actions are allowed
-        if (isAnimating)
-            return;
+        if (isAnimating) return;
 
         if (this.mTargetProgress >= mTotalProgress)
             this.mTargetProgress = mTotalProgress;
@@ -148,8 +147,7 @@ public class ProgressView extends View {
             invalidate();
         }
 
-        if (this.mTargetProgress == mTotalProgress)
-            mListener.onProgressCompleted();
+        if (this.mTargetProgress == mTotalProgress) mListener.onProgressCompleted();
     }
 
     public void next(boolean animate) {

@@ -59,8 +59,8 @@ public class ProgressFloatingActionButton extends FrameLayout implements Progres
         View view = inflate(getContext(), R.layout.view_progress_fab, this);
 
         // View injection (ButterKnife has issues with libraries apparently)
-        mFab = (FloatingActionButton) view.findViewById(R.id.pfFab);
-        mProgressView = (ProgressView) view.findViewById(R.id.pfProgress);
+        mFab = view.findViewById(R.id.pfFab);
+        mProgressView = view.findViewById(R.id.pfProgress);
 
         // Initializing color values
         mPrimaryColor = getThemePrimaryColor(context);
@@ -139,8 +139,7 @@ public class ProgressFloatingActionButton extends FrameLayout implements Progres
     public void onProgressCompleted() {
 
         // If the progress is completed the FAB will change
-        if (mFinalIcon != null)
-            mFab.setImageDrawable(mFinalIcon);
+        if (mFinalIcon != null) mFab.setImageDrawable(mFinalIcon);
 
         mFab.setOnClickListener(mListener);
     }
@@ -170,8 +169,7 @@ public class ProgressFloatingActionButton extends FrameLayout implements Progres
     }
 
     public void setIcon(Drawable icon) {
-        if (icon != null)
-            mFab.setImageDrawable(icon);
+        if (icon != null) mFab.setImageDrawable(icon);
     }
 
     public void setFinalIcon(Drawable mFinalIcon) {
